@@ -5,7 +5,11 @@ import { NavLink } from "react-router-dom";
 export function Navbar() {
   return (
     <>
-      <img src={"images/E-Commerce-Logo.png"} alt="Iris Skateshop Key"></img>
+      <img
+        src={"images/E-Commerce-Logo.png"}
+        className="mx-auto my-auto d-block"
+        alt="Iris Skateshop Key"
+      ></img>
       <></>
       <NavbarBs sticky="top" className="bg-white shadow-sm mb-3s">
         <Container>
