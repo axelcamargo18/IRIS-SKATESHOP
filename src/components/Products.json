@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Anti-Hero",
+    "description": "8.25",
+    "price": 69.99,
+    "image": "Anti-hero.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Baker",
+    "description": "8.0",
+    "price": 69.99,
+    "image": "Baker-og.webp"
+  },
+  {
+    "id": 3,
+    "name": "Chocolate",
+    "description": "7.75",
+    "price": 60.99,
+    "image": "Chocolate-Kenny-Anderson.webp"
+  },
+  {
+    "id": 4,
+    "name": "Chocolate",
+    "description": "8.0",
+    "price": 69.99,
+    "image": "Chocolate-Raven-Tershy.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Creature",
+    "description": "8.5",
+    "price": 69.99,
+    "image": "Creature-Logo-Stumps.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Girl",
+    "description": "8.0",
+    "price": 69.99,
+    "image": "Girl-Tyler-Pacheco.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Heroin",
+    "description": "8.25",
+    "price": 69.99,
+    "image": "Heroin-Lee-Yankou.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Hook-ups",
+    "description": "7.75",
+    "price": 69.99,
+    "image": "Hook-Ups-Airlines.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Hook-ups",
+    "description": "8.0",
+    "price": 69.99,
+    "image": "Hook-Ups-Nurse-Daisy.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Palace",
+    "description": "8.25",
+    "price": 69.99,
+    "image": "Palace-Skateboards-Chewy-Cannon.webp"
+  },
+  {
+    "id": 11,
+    "name": "Powell Peralta",
+    "description": "8.0",
+    "price": 69.99,
+    "image": "Powell-Peralta-OG.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Tired",
+    "description": "8.25",
+    "price": 69.99,
+    "image": "Tired-Skateboards-Detergent.webp"
+  }
+]

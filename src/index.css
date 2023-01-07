@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* imported fonts and also reset the css page to fill in the whole screen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+body,
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
