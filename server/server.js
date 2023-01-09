@@ -2,6 +2,7 @@ const path = require("path");
 const express = require("express");
 const mysql = require("mysql");
 const app = express();
+const cors = require("cors");
 
 const port = process.env.PORT || 4000;
 
@@ -56,7 +57,7 @@ app.get("/api/products/highToLow", (req, res) => {
     }
   });
 });
-
+app.use(cors());
 app.use(express.static(path.join(__dirname, "./build")));
 
 app.use((req, res) => {
