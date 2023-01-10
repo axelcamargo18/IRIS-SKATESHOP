@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import Button from "react-bootstrap/Button";
 
 export default class Productlist extends React.Component {
   constructor(props) {
@@ -23,7 +24,9 @@ export default class Productlist extends React.Component {
 
   getProducts = () => {
     axios
-      .get("https://iris-skateshop.herokuapp.com/api/products")
+      .get("http://localhost:4000/api/products")
+      // axios
+      //   .get("https://iris-skateshop.herokuapp.com/api/products")
       .then((res) => {
         console.log(res);
         this.setState({ products: res.data });
@@ -32,9 +35,10 @@ export default class Productlist extends React.Component {
 
   lowToHigh = () => {
     axios
-      .get("https://iris-skateshop.herokuapp.com/api/products")
+      .get("http://localhost:4000/api/products/lowToHigh")
+      // axios
+      //   .get("https://iris-skateshop.herokuapp.com/api/products/lowToHigh")
       .then((res) => {
-        // console.log(this.state.products);
         console.log(res);
         this.setState({ products: res.data });
       });
@@ -42,7 +46,9 @@ export default class Productlist extends React.Component {
 
   highToLow = () => {
     axios
-      .get("https://iris-skateshop.herokuapp.com/api/products")
+      .get("http://localhost:4000/api/products/highToLow")
+      // axios
+      //   .get("https://iris-skateshop.herokuapp.com/api/products/highToLow")
       .then((res) => {
         console.log(res);
         this.setState({ products: res.data });
@@ -54,19 +60,31 @@ export default class Productlist extends React.Component {
       <>
         <div>
           <div className="product-container">
+            <h4>Sort By Price: </h4>
             <div id="filter-container">
-              <h4>Sort By Price: </h4>
-
-              <button onClick={this.lowToHigh} className="btn btn-dark">
+              <Button
+                onClick={this.lowToHigh}
+                variant="outline-dark"
+                className="mx-1"
+              >
                 Low to High
-              </button>
+              </Button>
 
-              <button onClick={this.highToLow} className="btn btn-dark">
+              <Button
+                onClick={this.highToLow}
+                variant="outline-dark"
+                className="mx-1"
+              >
                 High to Low
-              </button>
-              <button onClick={this.getProducts} className="btn btn-dark">
-                Reset
-              </button>
+              </Button>
+
+              <Button
+                onClick={this.getProducts}
+                variant="outline-dark"
+                className="mx-1"
+              >
+                High to Low
+              </Button>
             </div>
           </div>
           <div className="cards-container">
