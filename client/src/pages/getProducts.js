@@ -23,8 +23,7 @@ export default class Productlist extends React.Component {
 
   getProducts = () => {
     axios
-      .get("http://localhost:4000/api/products")
-      // axios.get("https://iris-skateshop.herokuapp.com/api/products")
+      .get("https://iris-skateshop.herokuapp.com/api/products")
       .then((res) => {
         console.log(res);
         this.setState({ products: res.data });
@@ -33,8 +32,7 @@ export default class Productlist extends React.Component {
 
   lowToHigh = () => {
     axios
-      .get("http://localhost:4000/api/products/LowtoHigh")
-      // axios.get("https://iris-skateshop.herokuapp.com/api/products")
+      .get("https://iris-skateshop.herokuapp.com/api/products")
       .then((res) => {
         // console.log(this.state.products);
         console.log(res);
@@ -44,8 +42,7 @@ export default class Productlist extends React.Component {
 
   highToLow = () => {
     axios
-      .get("http://localhost:4000/api/products/HightoLow")
-      // axios.get("https://iris-skateshop.herokuapp.com/api/products")
+      .get("https://iris-skateshop.herokuapp.com/api/products")
       .then((res) => {
         console.log(res);
         this.setState({ products: res.data });
