@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6a95192f.css",
+    "main.js": "/static/js/main.3d7c32f6.js",
+    "static/media/tyshawn-01-1254w.mp4": "/static/media/tyshawn-01-1254w.0d7632045056b681f080.mp4",
+    "static/media/Baker4_Andrew_photo2_1500px_2x.jpeg": "/static/media/Baker4_Andrew_photo2_1500px_2x.a9e04b951ef34aae6fe9.jpeg",
+    "static/media/Tyshawn-og-low.jpeg": "/static/media/Tyshawn-og-low.0c24970ee0274bcff2ab.jpeg",
+    "index.html": "/index.html",
+    "main.6a95192f.css.map": "/static/css/main.6a95192f.css.map",
+    "main.3d7c32f6.js.map": "/static/js/main.3d7c32f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a95192f.css",
+    "static/js/main.3d7c32f6.js"
+  ]
+}

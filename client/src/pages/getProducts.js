@@ -1,19 +1,18 @@
 import React from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 
 export default class Productlist extends React.Component {
-  state = {
-    products: [],
-    type: "All",
-    filterText: "",
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      products: [],
+      type: "All",
+      filterText: "",
+    };
+  }
 
   componentDidMount() {
-    axios.get("http://localhost:4000/api/products").then((res) => {
-      console.log(res);
-      this.setState({ products: res.data });
-    });
+    this.getProducts();
   }
 
   myFilter(type) {
@@ -22,6 +21,37 @@ export default class Productlist extends React.Component {
     };
   }
 
+  getProducts = () => {
+    axios
+      .get("http://localhost:4000/api/products")
+      // axios.get("https://iris-skateshop.herokuapp.com/api/products")
+      .then((res) => {
+        console.log(res);
+        this.setState({ products: res.data });
+      });
+  };
+
+  lowToHigh = () => {
+    axios
+      .get("http://localhost:4000/api/products/LowtoHigh")
+      // axios.get("https://iris-skateshop.herokuapp.com/api/products")
+      .then((res) => {
+        // console.log(this.state.products);
+        console.log(res);
+        this.setState({ products: res.data });
+      });
+  };
+
+  highToLow = () => {
+    axios
+      .get("http://localhost:4000/api/products/HightoLow")
+      // axios.get("https://iris-skateshop.herokuapp.com/api/products")
+      .then((res) => {
+        console.log(res);
+        this.setState({ products: res.data });
+      });
+  };
+
   render() {
     return (
       <>
@@ -29,15 +59,17 @@ export default class Productlist extends React.Component {
           <div className="product-container">
             <div id="filter-container">
               <h4>Sort By Price: </h4>
-              <Link to="/products/LowtoHigh" className="btn btn-dark">
+
+              <button onClick={this.lowToHigh} className="btn btn-dark">
                 Low to High
-              </Link>
-              <Link to="/products/HightoLow" className="btn btn-dark">
+              </button>
+
+              <button onClick={this.highToLow} className="btn btn-dark">
                 High to Low
-              </Link>
-              <Link to="/products" className="btn btn-dark">
+              </button>
+              <button onClick={this.getProducts} className="btn btn-dark">
                 Reset
-              </Link>
+              </button>
             </div>
           </div>
           <div className="cards-container">
